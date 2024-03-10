@@ -14,22 +14,13 @@ class OwnerController extends Controller
 
     public function store(Request $request)
     {
-        $owner = new Owner();
-
-        $owner->name = $request->name;
-        $owner->surname = $request->surname;
-        $owner->phone = $request->phone;
-        $owner->email = $request->email;
-        $owner->address = $request->address;
-        $owner->save();
-
+        $owner = Owner::create($request->all());
         return redirect()->route('owners.index');
     }
 
     public function index()
     {
-        $owners = Owner::all();
-        return view('owner.index', compact('owners'));
+        return view('owner.index', ['owners' => Owner::with('cars')->get()]);
     }
 
     public function delete($id)
@@ -48,14 +39,7 @@ class OwnerController extends Controller
     public function update(Request $request, $id)
     {
         $owner = Owner::find($id);
-
-        $owner->name = $request->name;
-        $owner->surname = $request->surname;
-        $owner->phone = $request->phone;
-        $owner->email = $request->email;
-        $owner->address = $request->address;
-        $owner->save();
-
+        $owner->update($request->all());
         return redirect()->route('owners.index');
     }
 }

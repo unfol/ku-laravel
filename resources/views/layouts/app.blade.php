@@ -34,7 +34,7 @@
                             <a class="nav-link" href="{{ route('owners.index') }}">Savininkai</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('owner.create') }}">Prideti</a>
+                            <a class="nav-link" href="{{ route('cars.index') }}">Automobiliai</a>
                         </li>
 
                     </ul>
