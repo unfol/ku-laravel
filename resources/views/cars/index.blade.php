@@ -2,21 +2,24 @@
 
 @section('content')
     <div class="container">
+        <li>[[phone]]</li>
+        <li>[[email]]</li>
+        <li>[[address]]</li>
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header ">Automobiliai</div>
+                    <div class="card-header ">{{ __("Cars") }}</div>
                     <div class="card-body">
-                        <a href="{{ route('cars.create') }}" class="btn btn-primary mb-3">Pridėti naują automobilį</a>
+                        <a href="{{ route('cars.create') }}" class="btn btn-primary mb-3">{{ __("Add new car") }}</a>
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th scope="col">ID</th>
-                                    <th scope="col">Registracijos numeris</th>
-                                    <th scope="col">Markė</th>
-                                    <th scope="col">Modelis</th>
-                                    <th scope="col">Savininkas</th>
-                                    <th scope="col">Veiksmai</th>
+                                    <th scope="col">{{ __("Registration number") }}</th>
+                                    <th scope="col">{{ __("Brand") }}</th>
+                                    <th scope="col">{{ __("Model") }}</th>
+                                    <th scope="col">{{ __("Owner") }}</th>
+                                    <th scope="col">{{ __("Actions") }}</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -28,11 +31,11 @@
                                         <td>{{ $car->model }}</td>
                                         <td>{{ $car->owner->name }} {{ $car->owner->surname }}</td>
                                         <td>
-                                            <a href="{{ route('cars.edit', $car) }}" class="btn btn-success">Redaguoti</a>
+                                            <a href="{{ route('cars.edit', $car) }}" class="btn btn-success">{{ __("Edit") }}</a>
                                             <form method="POST" action="{{ route('cars.destroy', $car) }}" class="d-inline">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-danger">Ištrinti</button>
+                                                <button type="submit" class="btn btn-danger">{{ __("Delete") }}</button>
                                             </form>
                                         </td>
                                     </tr>

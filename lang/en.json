@@ -1,0 +1,27 @@
+{
+    "Owners": "Owners",
+    "Cars": "Cars",
+    "Add new owner": "Add new owner",
+    "Full name": "Full name",
+    "Phone": "Phone",
+    "Email": "Email",
+    "Address": "Address",
+    "Vehicles": "Vehicles",
+    "Actions": "Actions",
+    "Edit": "Edit",
+    "Delete": "Delete",
+
+    "Edit owner": "Edit owner",
+    "First name": "First name",
+    "Surname": "Surname",
+    "Update": "Update",
+    "Add": "Add",
+
+    "Add new car": "Add new car",
+    "Brand": "Brand",
+    "Model": "Model",
+    "Owner": "Owner",
+    "Edit car": "Edit car",
+    "Choose the owner": "Choose the owner"
+
+}

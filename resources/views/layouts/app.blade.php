@@ -31,16 +31,21 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('owners.index') }}">Savininkai</a>
+                            <a class="nav-link" href="{{ route('owners.index') }}">{{ __("Owners") }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('cars.index') }}">Automobiliai</a>
+                            <a class="nav-link" href="{{ route('cars.index') }}">{{ __("Cars") }}</a>
                         </li>
-
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('setLanguage','LT') }}">LT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('setLanguage','EN') }}">EN</a>
+                        </li>
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))

@@ -1,0 +1,27 @@
+{
+    "Owners": "Savininkai",
+    "Cars": "Automobiliai",
+    "Add new owner": "Pridėti naują savininką",
+    "Full name": "Vardas & Pavarde",
+    "Phone": "Telefono numeris",
+    "Email": "El. paštas",
+    "Address": "Adresas",
+    "Vehicles": "Automobiliai",
+    "Actions": "Veiksmai",
+    "Edit": "Redaguoti",
+    "Delete": "Ištrinti",
+
+    "Edit owner": "Redaguoti savininką",
+    "First name": "Vardas",
+    "Surname": "Pavardė",
+    "Update": "Atnaujinti",
+    "Add": "Pridėti",
+
+    "Add new car": "Pridėti naują automobilį",
+    "Registration number": "Registracijos numeris",
+    "Brand": "Markė",
+    "Model": "Modelis",
+    "Owner": "Savininkas",
+    "Edit car": "Redaguoti automobilį",
+    "Choose the owner": "Pasirinkite savininką"
+}
